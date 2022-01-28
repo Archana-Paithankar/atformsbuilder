@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function FormFields() {
+export default function UserDashboardFormInput1() {
     return <div>
         <div className='container-fluid'>
             <div className='row'>
