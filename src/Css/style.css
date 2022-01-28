@@ -1,0 +1,32 @@
+.logoimg {
+    width: 200px;
+    height: 50px;
+}
+.container{
+    background-color: #B3BAB1;
+}
+.formElements p{
+    background-color: rgb(190, 189, 189);
+    padding: 5px;
+    font-size:1.5rem;
+    height: 75px;
+}
+.formElements p:hover{
+background: linear-gradient(to right,rgb(78, 76, 76),rgb(87, 82, 82),rgb(97, 91, 91),rgb(204, 190, 190));
+}
+.collectInformation{
+background-color: #232523 ;
+height: 90%;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+.formContainer{
+    background-color: #414641;
+    border-radius: 10px;
+    padding:35px 0px 35px 0px;
+    height: 90%;
+}
+.formInput{
+    width: 80%;
+}
+
