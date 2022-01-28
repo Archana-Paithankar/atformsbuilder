@@ -67,11 +67,14 @@ text-justify: inter-word;
     border-bottom: 4px solid white;
 }
 
-
+/* UserDashboardFormPreview.js */
 hr {
     margin-top: 2rem;
     margin-bottom: 2rem;
     border: 0;
     border-top: 4px solid white;
-    border-color:white;
+  }
+  /* Footer CSS */
+  .page-footer h4{
+      font-size: 1rem;
   }

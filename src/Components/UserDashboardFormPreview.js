@@ -17,7 +17,7 @@ export default function UserDashboardFormPreview() {
         <div className='col-3 mt-5'>
           <Dashboard />
         </div>
-        <div className='col-6'>
+        <div className='col-8'>
           <div className='at-form-info-Container'>
             <div className='row'>
               <div className='col  d-flex justify-content-center'>

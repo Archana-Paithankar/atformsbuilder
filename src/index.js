@@ -12,10 +12,11 @@ import UserDashboardCreateForm from './Components/UserDashboardCreateForm';
 import UserDashboardSavedForms from './Components/UserDashboardSavedForms';
 import UserDashboardFormPreview1 from './Components/UserDashboardFormPreview1';
 import UserDashboardFormPreview from './Components/UserDashboardFormPreview';
+import UserDashboardFormInput2 from './Components/UserDashboardFormInput2';
 
 ReactDOM.render(
   <React.StrictMode>
-    <UserDashboardFormPreview />
+    <UserDashboardFormInput2 />
   
   </React.StrictMode>,
   document.getElementById('root')
