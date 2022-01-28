@@ -1,27 +1,28 @@
 import React from 'react';
-
-export default function CreateForm() {
+import Dashboard from '../Components/Dashboard'
+import Site from '../Components/Site'
+export default function UserDashboardCreateForm() {
     return <div>
-        <div className='container-fluid'>
+        <div className='container-fluid pt-4'>
             <div className='row'>
                 <div className='col-8'>
                     <img src='/image/logo.png' className="logoimg" alt='logo' />
                 </div>
-                <div className='col'>Welcome<strong>[Username]</strong></div>
-                <div className='col text-danger'>Log Out</div>
+                <div className='col pe-0'>Welcome<strong>[Username]</strong></div>
+                <div className='col text-danger ps-0'><strong>Log Out</strong></div>
             </div>
-            <div className='row mt-5'>
-                <div className='col-4'>
-                    {/* dashboard */}
+            <div className='row m-5'>
+                <div className='col-3 pt-5'>
+                    <Dashboard />
                 </div>
                 <div className='col-6'>
-                    <div className='formContainer'>
+                    <div className='at-form-info-Container'>
                         <div className='row'>
                             <div className='col  d-flex justify-content-center'>
                                 <h3 className='text-white p-4'> CREATE FORM</h3>
                             </div>
                         </div>
-                        <div className='collectInformation'>
+                        <div className='at-collect-Information'>
                             <div className='row'>
                                 <div className='col'>
                                     <div class="mb-3 mt-5">
@@ -34,7 +35,7 @@ export default function CreateForm() {
                                 <div className='col'>
                                     <div class="mb-3">
                                         <label for="exampleFormControlTextarea1" className="form-label text-white ms-5 text-muted"><h5>Form Description</h5></label>
-                                        <textarea className="form-control formInput ms-5" id="exampleFormControlInput1" />
+                                        <textarea className="form-control formInput ms-5" id="exampleFormControlInput1"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -49,6 +50,7 @@ export default function CreateForm() {
                     </div>
                 </div>
             </div>
+            <Site />
         </div>
     </div>;
 }

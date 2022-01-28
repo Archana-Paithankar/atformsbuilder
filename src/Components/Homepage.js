@@ -1,5 +1,7 @@
 import React from 'react';
+import Site from './Site';
 import '../Css/style.css'
+
 export default function Homepage() {
   return <div>
     <div className="container-fluid">
@@ -15,7 +17,7 @@ export default function Homepage() {
           </div>
         </div>
         <div className='row'>
-          <div className='col-6 formElements'>
+          <div className='col-6 at-form-p-elements'>
             <div className='mb-3'>
               <p>Simple way to add multiple fields</p>
             </div>
@@ -37,13 +39,13 @@ export default function Homepage() {
           </div>
 
           <div className='col-6'>
-            <div className='formContainer'>
+            <div className='at-form-info-Container'>
               <div className='row'>
                 <div className='col  d-flex justify-content-center'>
                   <h3 className='text-white p-4'> START COLLECTING INFORMATION</h3>
                 </div>
               </div>
-              <div className='collectInformation'>
+              <div className='at-collect-Information'>
                 <div className='row'>
                   <div className='col'>
                     <div class="mb-3 mt-5">
@@ -72,6 +74,7 @@ export default function Homepage() {
           </div>
         </div>
       </div>
+      <Site />
     </div>
   </div>
 }

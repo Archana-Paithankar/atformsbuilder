@@ -1,26 +1,36 @@
 import React from 'react';
 import Routers from '../Routers/Routers';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import '../Css/Dashboard.css';
+import Site from './Site';
 export default function Dashboard() {
   return <div>
-      <header>
-      <nav className ="navbar">
-<ul className ="nav navbar-nav">
-<li className ="nav-item">
-<a className ="nav-link" href="<Homepage />"> My Dashboard </a>
-</li>
-<li className ="nav-item">
-<a className ="nav-link" href="<LoginForm />"> Saved Forms </a>
-</li>
-<li className ="nav-item">
-<a className ="nav-link" href="#"> Create Forms </a>
-</li>
-<li className ="nav-item">
-<a className ="nav-link" href="#"> Log Out </a>
-</li>
-</ul>
-</nav>
-    </header>
+  
+    <header>
+      <nav className="navbar">
+        <ul className="nav navbar-nav">
+          <div className='mb-4'>
+            <li className="nav-item">
+              <a className="nav-link text-dark px-3" href="#"> My Dashboard </a>
+            </li>
+          </div>
+          <div className='mb-4'>
+            <li className="nav-item">
+              <a className="nav-link text-dark px-3" href="#"> Saved Forms </a>
+            </li>
+          </div>
+          <div className='mb-4'>
+            <li className="nav-item">
+              <a className="nav-link text-dark px-3" href="#"> Create Forms </a>
+            </li>
+          </div>
+          <div className='mb-4'>
+            <li className="nav-item">
+              <a className="nav-link text-dark px-3" href="#"> Log Out </a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </header>   
   </div>;
 }

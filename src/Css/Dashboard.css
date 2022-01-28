@@ -1,4 +1,6 @@
  li a{
-    background: rgb(180, 180, 187);
-    margin: 5px;
+    background:linear-gradient(to right,rgb(183, 183, 196),rgb(178, 188, 201));
+    margin-left: 2.5rem;
+    word-spacing: .1rem;
+    font-size: larger;
 }
