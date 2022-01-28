@@ -43,33 +43,33 @@ export default function UserDashboardFormInput1() {
                                 <div className='col'>
                                     <div className="form-check">
                                         <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                                            <label className="form-check-label text-white" for="flexRadioDefault1">
-                                              Short Input Text
-                                            </label>
-                                    </div>
-                                    </div>
-                                    <div className='col'></div>
-                                    <div className="form-check">
-                                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
-                                            <label className="form-check-label text-white" for="flexRadioDefault2">
-                                                Checkbox
-                                            </label>
+                                        <label className="form-check-label text-white" for="flexRadioDefault1">
+                                            Short Input Text
+                                        </label>
                                     </div>
                                 </div>
                                 <div className='col'></div>
+                                <div className="form-check">
+                                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+                                    <label className="form-check-label text-white" for="flexRadioDefault2">
+                                        Checkbox
+                                    </label>
+                                </div>
                             </div>
+                            <div className='col'></div>
+                        </div>
 
-                            <div className='row'>
-                                <div className='col'>
-                                    <div class="col-auto d-flex justify-content-center mt-3">
-                                        <button type="submit" class="btn text-white  px-4 py-2 fw-bold btn-secondary">Save and Continue</button>
-                                    </div>
+                        <div className='row'>
+                            <div className='col'>
+                                <div class="col-auto d-flex justify-content-center mt-3">
+                                    <button type="submit" class="btn text-white  px-4 py-2 fw-bold btn-secondary">Save and Continue</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-  
+        </div>
+
     </div>;
 }

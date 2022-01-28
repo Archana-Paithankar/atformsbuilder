@@ -23,7 +23,7 @@ background: linear-gradient(to right,rgb(78, 76, 76),rgb(87, 82, 82),rgb(97, 91,
 }
 .at-collect-Information{
 background-color: #232523 ;
-height: 90%;
+height: 95%;
 border-bottom-left-radius: 10px;
 border-bottom-right-radius: 10px;
 }
@@ -31,7 +31,7 @@ border-bottom-right-radius: 10px;
     background-color: #414641;
     border-radius: 10px;
     padding:35px 0px 35px 0px;
-    height: 90%;
+    height: 95%;
 }
 .formInput{
     width: 80%;
@@ -64,5 +64,14 @@ text-justify: inter-word;
 /* UserDashboardSavedForms.js css */
 .at-saved-paragraphs{
     color: white;
-    border-bottom: 1px solid white;
+    border-bottom: 4px solid white;
 }
+
+
+hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 0;
+    border-top: 4px solid white;
+    border-color:white;
+  }

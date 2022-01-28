@@ -4,3 +4,6 @@
     word-spacing: .1rem;
     font-size: larger;
 }
+li a:hover{
+    background: linear-gradient(to right,rgb(78, 76, 76),rgb(87, 82, 82),rgb(97, 91, 91),rgb(204, 190, 190));
+    }
