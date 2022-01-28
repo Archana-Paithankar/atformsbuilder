@@ -2,7 +2,7 @@ import React from 'react';
 import '../Css/style.css'
 import Dashboard from './Dashboard';
 import Site from './Site';
-export default function WelcomePage() {
+export default function FirstTimeLoginScreen() {
     return <div>
         <div className='container-fluid'>
             <div className='row'>
