@@ -10,13 +10,23 @@
     background-color: #B3BAB1;
     height:100%;
 }
-
+/* Header.js css */
+.at-username ,.at-logout-btn a{
+    text-decoration: none;
+     font-size: 1.3rem;
+  }
+.at-username a{
+    color: black;  
+}
+.at-logout-btn a{
+    color: red;
+}
 /* Homepage CSS */
 .at-form-p-elements p{
     background-color: rgb(190, 189, 189);
     padding: 5px;
     font-size:1.5rem;
-    height: 75px;
+    height: 20%;
 }
 .at-form-p-elements p:hover{
 background: linear-gradient(to right,rgb(78, 76, 76),rgb(87, 82, 82),rgb(97, 91, 91),rgb(204, 190, 190));
@@ -36,9 +46,7 @@ border-bottom-right-radius: 10px;
 .formInput{
     width: 80%;
 }
-
 /* FirstLoginFormScreen CSS */
-
 .at-welcome{
     font-size: 2rem;
     font-weight: normal;
@@ -67,7 +75,8 @@ text-justify: inter-word;
     border-bottom: 4px solid white;
 }
 
-/* UserDashboardFormPreview.js */
+/* UserDashboardFormPreview.js  Css*/
+
 hr {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -78,3 +87,4 @@ hr {
   .page-footer h4{
       font-size: 1rem;
   }
+  

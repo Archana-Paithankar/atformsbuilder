@@ -1,22 +1,22 @@
 import React from 'react';
 import Dashboard from './Dashboard';
 import Site from './Site';
-import '../Css/style.css'
+import Header from './Header';
+import '../Css/style.css';
+
 export default function UserDashboardFormInput1() {
     return <div>
         <div className='container-fluid'>
             <div className='row'>
-                <div className='col-8'>
-                    <img src='/image/logo.png' className="logoimg" alt='logo' />
+                <div className='col'>
+                    <Header />
                 </div>
-                <div className='col'>Welcome<strong>[Username]</strong></div>
-                <div className='col text-danger'>Log Out</div>
             </div>
             <div className='row mt-5'>
                 <div className='col-3 mt-5'>
                     <Dashboard />
                 </div>
-                <div className='col-8'>
+                <div className='col-7'>
                     <div className='at-form-info-Container'>
                         <div className='row'>
                             <div className='col  d-flex justify-content-center'>
@@ -105,24 +105,24 @@ export default function UserDashboardFormInput1() {
                                 </div>
                             </div>
                             <div className='row'>
-                            <div className='col'>
-                                <div class="col-auto d-flex justify-content-end mx-5">
-                                    <button type="submit" class="btn text-white fw-bold bg-secondary">Add More Fields</button>
+                                <div className='col'>
+                                    <div class="col-auto d-flex justify-content-end mx-5">
+                                        <button type="submit" class="btn text-white fw-bold bg-secondary">Add More Fields</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className='row'>
-                            <div className='col px-5'>
-                                <hr />
-                            </div>
-                        </div>
-                        <div className='row'>
-                            <div className='col'>
-                                <div class="col-auto d-flex justify-content-center">
-                                    <button type="submit" class="btn text-white fw-bold btn-secondary">Save and Continue</button>
+                            <div className='row'>
+                                <div className='col px-5'>
+                                    <hr />
                                 </div>
                             </div>
-                        </div>
+                            <div className='row'>
+                                <div className='col'>
+                                    <div class="col-auto d-flex justify-content-center">
+                                        <button type="submit" class="btn text-white fw-bold btn-secondary">Save and Continue</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

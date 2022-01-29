@@ -1,15 +1,15 @@
 import React from 'react';
 import Site from './Site';
 import Dashboard from './Dashboard';
+import Header from './Header';
+import '../Css/style.css'
 export default function UserDashboardFormPreview() {
   return <div>
     <div className='container-fluid'>
       <div className='row pt-4'>
-        <div className='col-8'>
-          <img src='/image/logo.png' className="logoimg" alt='logo' />
-        </div>
-        <div className='col pe-0'>Welcome<strong>[Username]</strong></div>
-        <div className='col text-danger ps-0'><strong>Log Out</strong></div>
+        <div className='col'>
+          <Header />
+          </div>
       </div>
 
 
@@ -17,7 +17,7 @@ export default function UserDashboardFormPreview() {
         <div className='col-3 mt-5'>
           <Dashboard />
         </div>
-        <div className='col-8'>
+        <div className='col-7'>
           <div className='at-form-info-Container'>
             <div className='row'>
               <div className='col  d-flex justify-content-center'>

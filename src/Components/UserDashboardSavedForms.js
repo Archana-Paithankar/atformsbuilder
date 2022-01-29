@@ -1,15 +1,15 @@
 import React from 'react';
 import Site from './Site';
 import Dashboard from './Dashboard';
+import Header from './Header';
+import '../Css/style.css'
 export default function UserDashboardSavedForms() {
   return <div>
  <div className='container-fluid pt-4'>
             <div className='row'>
-                <div className='col-8'>
-                    <img src='/image/logo.png' className="logoimg" alt='logo' />
+                <div className='col'>
+                    <Header />
                 </div>
-                <div className='col pe-0'>Welcome<strong>[Username]</strong></div>
-                <div className='col text-danger ps-0'><strong>Log Out</strong></div>
             </div>
             <div className='row m-5'>
                 <div className='col-3 pt-5'>

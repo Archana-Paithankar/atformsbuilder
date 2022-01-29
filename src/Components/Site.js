@@ -6,8 +6,8 @@ import Dashboard from './Dashboard';
 import '../Css/style.css'
 export default function Site() {
   return <div>
-    
-    <footer className="page-footer">
+    <div className='container-fluid'>
+    <footer className="page-footer mx-5">
         <div className='row'>
           <div className='col'>
             <hr className=' border-5 border-top border-dark' />
@@ -18,14 +18,7 @@ export default function Site() {
           <div className='col-6 text-end'><h4>Powered By- ATJOIN PVT LTD.</h4></div>
         </div>
     </footer>
-
-
-
-    {/* <footer class="page-footer font-small blue">
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-  </div>
-</footer> */}
+    </div>
 
   </div>;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import Site from './Site';
 import '../Css/style.css'
-
+import FirstTimeLoginScreen from './FirstTimeLoginScreen';
 export default function Homepage() {
   return <div>
     <div className="container-fluid">
@@ -18,27 +18,27 @@ export default function Homepage() {
         </div>
         <div className='row'>
           <div className='col-6 at-form-p-elements'>
-            <div className='mb-3'>
+            <div className='mb-2'>
               <p>Simple way to add multiple fields</p>
             </div>
-            <div className='mb-3'>
+            <div className='mb-2'>
               <p>Create forms to collect information for your school,college,business and so on.</p>
             </div>
-            <div className='mb-3'>
+            <div className='mb-2'>
               <p>Get custome short links for free and and share to collect information.</p>
             </div>
-            <div className='mb-3'>
+            <div className='mb-2'>
               <p>View collected information in tables</p>
             </div>
-            <div className='mb-3'>
+            <div className='mb-2'>
               <p>Export your collected data in excel format.</p>
             </div>
-            <div className='mb-3'>
+            <div className='mb-2'>
               <p>Create unlimited forms with one account.</p>
             </div>
           </div>
 
-          <div className='col-6'>
+          <div className='col-7'>
             <div className='at-form-info-Container'>
               <div className='row'>
                 <div className='col  d-flex justify-content-center'>

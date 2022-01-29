@@ -1,21 +1,20 @@
 import React from 'react';
 import Site from './Site';
 import Dashboard from './Dashboard';
+import Header from './Header';
 export default function UserDashboardFormInput2() {
   return <div>
     <div className='container-fluid'>
-            <div className='row'>
-                <div className='col-8'>
-                    <img src='/image/logo.png' className="logoimg" alt='logo' />
-                </div>
-                <div className='col'>Welcome<strong>[Username]</strong></div>
-                <div className='col text-danger'>Log Out</div>
+            <div className='row pt-3'>
+                <div className='col'>
+                    <Header />
+                   </div>
             </div>
             <div className='row mt-5'>
                 <div className='col-3 mt-5'>
                     <Dashboard />
                 </div>
-                <div className='col-8'>
+                <div className='col-7'>
                     <div className='at-form-info-Container'>
                         <div className='row'>
                             <div className='col  d-flex justify-content-center'>
@@ -184,6 +183,7 @@ export default function UserDashboardFormInput2() {
                                     </div>
                                 </div>
                             </div>
+
                             <div className='row'>
                             <div className='col'>
                                 <div class="col-auto d-flex justify-content-end mx-5">

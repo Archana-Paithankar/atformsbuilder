@@ -5,6 +5,7 @@ import Site from './Site';
 export default function FirstTimeLoginScreen() {
     return <div>
         <div className='container-fluid'>
+            <div className='container'>
                 <div className='row pt-4'>
                     <div className='col-8'>
                         <img src='/image/logo.png' className="logoimg" alt='logo' />
@@ -22,7 +23,7 @@ export default function FirstTimeLoginScreen() {
                 <div className='col-3'>
                     <Dashboard />
                 </div>
-                <div className='col'>
+                <div className='col-7'>
                     <div className='at-login-warning'>
                         <div className='mb-3'>
                             <p className=''>Please check you E-mail for E-mail Varification link and click to verify email and
@@ -36,6 +37,7 @@ export default function FirstTimeLoginScreen() {
                 </div>
             </div>
             <Site />
+            </div>
         </div>
 
     </div>;
