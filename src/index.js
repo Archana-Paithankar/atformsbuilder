@@ -16,7 +16,7 @@ import UserDashboardFormInput2 from './Components/UserDashboardFormInput2';
 
 ReactDOM.render(
   <React.StrictMode>
-    <UserDashboardSavedForms />
+    <UserDashboardFormPreview />
   
   </React.StrictMode>,
   document.getElementById('root')

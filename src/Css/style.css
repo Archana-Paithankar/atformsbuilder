@@ -29,7 +29,7 @@
     height: 20%;
 }
 .at-form-p-elements p:hover{
-background: linear-gradient(to right,rgb(78, 76, 76),rgb(87, 82, 82),rgb(97, 91, 91),rgb(204, 190, 190));
+background: linear-gradient(to right,#232523,#414641,#B3BAB1);
 }
 .at-collect-Information{
 background-color: #232523 ;
@@ -71,20 +71,26 @@ text-justify: inter-word;
 
 /* UserDashboardSavedForms.js css */
 .at-saved-paragraphs{
-    color: white;
-    border-bottom: 4px solid white;
+    color: white; 
+}
+ #at-view-btn, #at-export-btn, #at-delete-btn{
+  border-radius: 50px;
+  background-color: #232523;
+  outline: none;
+  border: none;
+  color: white;
 }
 
 /* UserDashboardFormPreview.js  Css*/
 
-hr {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    border: 0;
+hr {    
     border-top: 4px solid white;
+  }
+  .btn{
+      width: 100%;
   }
   /* Footer CSS */
   .page-footer h4{
-      font-size: 1rem;
+      font-size: 1.5rem;
   }
   

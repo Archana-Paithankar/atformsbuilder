@@ -1,9 +1,9 @@
  li a{
-    background:linear-gradient(to right,rgb(183, 183, 196),rgb(178, 188, 201));
+    background: #B3BAB1;
     margin-left: 2.5rem;
     word-spacing: .1rem;
-    font-size: larger;
+    font-size: 25px;
 }
 li a:hover{
-    background: linear-gradient(to right,rgb(83, 78, 78),rgb(122, 116, 116),rgb(214, 199, 199));
+   background:  linear-gradient(to right,#414641,#B3BAB1);
 }

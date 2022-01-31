@@ -11,22 +11,22 @@ export default function Dashboard() {
         <ul className="nav navbar-nav">
           <div className='mb-4'>
             <li className="nav-item">
-              <a className="nav-link text-dark px-3" href="#"> My Dashboard </a>
+              <a className="nav-link text-dark px-3 py-3" href="#"> My Dashboard </a>
             </li>
           </div>
           <div className='mb-4'>
             <li className="nav-item">
-              <a className="nav-link text-dark px-3" href="#"> Saved Forms </a>
+              <a className="nav-link text-dark px-3 py-3" href="#"> Saved Forms </a>
             </li>
           </div>
           <div className='mb-4'>
             <li className="nav-item">
-              <a className="nav-link text-dark px-3" href="#"> Create Forms </a>
+              <a className="nav-link text-dark px-3 py-3" href="#"> Create Forms </a>
             </li>
           </div>
           <div className='mb-4'>
             <li className="nav-item">
-              <a className="nav-link text-dark px-3" href="#"> Log Out </a>
+              <a className="nav-link text-dark px-3 py-3" href="#"> Log Out </a>
             </li>
           </div>
         </ul>

@@ -82,10 +82,11 @@ export default function UserDashboardFormPreview() {
                 </div>
               </div>
               <div className='row'>
-                <div className='col'>
-                  <div class="col-auto d-flex justify-content-center">
-                    <button type="submit" class="btn text-white  px-4 py-2 fw-bold btn-secondary">Create Link and Publish</button>
-                  </div>
+                <div className='col-5 d-flex justify-content-center'>
+                <button type="submit" class="btn text-white  px-4 py-4 fw-bold btn-secondary">Back</button>
+                </div>
+                <div className='col-5 d-flex justify-content-center'>                 
+                    <button type="submit" class="btn text-white  px-4 py-4 fw-bold btn-secondary">Create Link and Publish</button>
                 </div>
               </div>
             </div>
