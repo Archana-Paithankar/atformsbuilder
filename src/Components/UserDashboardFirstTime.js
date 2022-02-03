@@ -1,11 +1,11 @@
 import React from 'react';
 import Dashboard from './Dashboard';
 import Site from './Site';
-import Header from '../Components/Header'
+import Header from '../Components/Header';
+import { Link } from 'react-router-dom';
 export default function UserDashboardFirstTime() {
     return <div>
         <div className='container-fluid'>
-            
                 <div className='row pt-4'>
                     <div className='col'>
                         <Header />
@@ -29,14 +29,13 @@ export default function UserDashboardFirstTime() {
                                     </p>
                                 </div>
                                 <div className='mb-3'>
-                                    <p> <a href=''>Click here to create your first form</a></p>
+                                    <p><Link to="/userdashboardcreateform"> <a href=''>Click here to create your first form</a></Link></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <Site />
+                {/* <Site /> */}
             </div>
-      
     </div>;
 }

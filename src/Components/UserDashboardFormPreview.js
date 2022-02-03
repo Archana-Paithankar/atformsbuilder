@@ -1,9 +1,41 @@
 import React from 'react';
+import { useState } from "react";
 import Site from './Site';
 import Dashboard from './Dashboard';
 import Header from './Header';
+import { Link } from 'react-router-dom';
 import '../Css/style.css'
 export default function UserDashboardFormPreview() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const onChangeHandler = (fieldName, value)=>{
+    if(fieldName === "name"){
+      setName(value);
+    }
+    else if(fieldName>20)
+    {
+      alert('Name should be less than 20');
+    }
+    if(fieldName === "email"){
+      setEmail(value);
+    }
+    else if(!(/^\w+([\.-]?\w+)*\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))){
+      alert("email id is not valid");
+    }
+  }
+  const onSubmitHandler = (e)=>{
+    e.preventDefault();
+    if(name.trim()==="" || email.trim() =="")
+    {
+      alert("required both field");
+    }
+    else{
+      alert(name+" " +email);
+      setName("");
+      setEmail("");
+    }
+  }
+
   return <div>
     <div className='container-fluid'>
       <div className='row pt-4'>
@@ -25,11 +57,12 @@ export default function UserDashboardFormPreview() {
               </div>
             </div>
             <div className='at-collect-Information'>
+              <form onSubmit={(e)=>{onSubmitHandler(e)}}>
               <div className='row'>
                 <div className='col'>
                   <div class="mb-3 mt-5">
                     <label for="exampleFormControlInput1" className="form-label text-white ms-5"><h5> Enter Your Name*</h5></label>
-                    <input type="text" className="form-control formInput ms-5" id="exampleFormControlInput1" />
+                    <input type="text" className="form-control formInput ms-5" id="exampleFormControlInput1" value={name} onChange={(e)=>{ onChangeHandler("name",e.target.value)}} />
                   </div>
                 </div>
               </div>
@@ -37,7 +70,7 @@ export default function UserDashboardFormPreview() {
                 <div className='col'>
                   <div class="mb-3">
                     <label for="exampleFormControlInput1" className="form-label text-white ms-5"><h5> Enter Your Email ID*</h5></label>
-                    <input type="email" className="form-control formInput ms-5" id="exampleFormControlInput1" />
+                    <input type="email" className="form-control formInput ms-5" id="exampleFormControlInput1" value={email} onChange={(e)=>{ onChangeHandler("email",e.target.value)}}/>
                   </div>
                 </div>
               </div>
@@ -52,7 +85,7 @@ export default function UserDashboardFormPreview() {
                 </div>
                 <div className='col-3'>
                   <div className="form-check">
-                    <input className="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2" />
+                    <input className="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2" required/>
                     <label className="form-check-label text-white px-3" for="gridRadios2">
                       Female
                     </label>
@@ -82,17 +115,18 @@ export default function UserDashboardFormPreview() {
                 </div>
               </div>
               <div className='row'>
-                <div className='col-5 d-flex justify-content-center'>
-                <button type="submit" class="btn text-white  px-4 py-4 fw-bold btn-secondary">Back</button>
+                <div className='col-5 d-flex justify-content-center ms-5'>
+              <Link to="/userdashboardforminput2">  <button type="submit" className="btn text-white  px-4 py-4 fw-bold btn-secondary">Back</button></Link>
                 </div>
                 <div className='col-5 d-flex justify-content-center'>                 
-                    <button type="submit" class="btn text-white  px-4 py-4 fw-bold btn-secondary">Create Link and Publish</button>
+                <Link to="/userdashboardformpreview1">      <button type="submit" className="btn text-white py-4  fw-bold btn-secondary">Create Link and Publish</button></Link>
                 </div>
               </div>
+              </form>
             </div>
           </div>
         </div>
-        <Site />
+        {/* <Site /> */}
       </div>
     </div>
   </div>;

@@ -1,5 +1,6 @@
 import React from 'react';
 import Site from './Site';
+import { Link } from 'react-router-dom';
 import '../Css/style.css'
 import FirstTimeLoginScreen from './FirstTimeLoginScreen';
 export default function Homepage() {
@@ -65,7 +66,7 @@ export default function Homepage() {
                 <div className='row'>
                   <div className='col'>
                     <div class="col-auto d-flex justify-content-center mt-3">
-                      <button type="submit" class="btn text-white  px-4 py-2 fw-bold btn-secondary">Sign in or Sign Up</button>
+                   <Link to="/firsttimeloginscreen"><button type="submit" class="btn text-white  px-4 py-2 fw-bold btn-secondary">Sign in or Sign Up</button></Link>
                     </div>
                   </div>
                 </div>
@@ -74,7 +75,7 @@ export default function Homepage() {
           </div>
         </div>
       </div>
-      <Site />
+      {/* <Site /> */}
     </div>
   </div>
 }

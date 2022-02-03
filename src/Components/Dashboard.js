@@ -9,24 +9,24 @@ export default function Dashboard() {
     <header>
       <nav className="navbar">
         <ul className="nav navbar-nav">
-          <div className='mb-4'>
+          <div className='m-0'>
             <li className="nav-item">
-              <a className="nav-link text-dark px-3 py-3" href="#"> My Dashboard </a>
+            <Link to=""><a className="nav-link text-dark " href="#"> My Dashboard </a></Link>
             </li>
           </div>
-          <div className='mb-4'>
+          <div className='m-0'>
             <li className="nav-item">
-              <a className="nav-link text-dark px-3 py-3" href="#"> Saved Forms </a>
+             <Link to="/userdashboardsavedforms"><a className="nav-link text-dark" href="#"> Saved Forms </a></Link> 
             </li>
           </div>
-          <div className='mb-4'>
+          <div className='m-0'>
             <li className="nav-item">
-              <a className="nav-link text-dark px-3 py-3" href="#"> Create Forms </a>
+            <Link to="/userdashboardcreateform"><a className="nav-link text-dark" href="#"> Create Forms </a></Link>
             </li>
           </div>
-          <div className='mb-4'>
+          <div className='m-0'>
             <li className="nav-item">
-              <a className="nav-link text-dark px-3 py-3" href="#"> Log Out </a>
+              <Link to="/homepage"><a className="nav-link text-dark " href="#"> Log Out </a></Link>
             </li>
           </div>
         </ul>

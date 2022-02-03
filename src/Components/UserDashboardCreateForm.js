@@ -2,17 +2,18 @@ import React from 'react';
 import Dashboard from '../Components/Dashboard'
 import Site from '../Components/Site'
 import Header from './Header';
+import { Link } from 'react-router-dom';
 export default function UserDashboardCreateForm() {
     return <div>
         <div className='container-fluid pt-4'>
             
                 <div className='row'>
-                    <div className='col'>
+                    <div className='col-12'>
                         <Header />
                        </div>
                 </div>
                 <div className='row m-5'>
-                    <div className='col-3 pt-5'>
+                    <div className='col-5 pt-5'>
                         <Dashboard />
                     </div>
                     <div className='col-7'>
@@ -42,7 +43,7 @@ export default function UserDashboardCreateForm() {
                                 <div className='row'>
                                     <div className='col'>
                                         <div class="col-auto d-flex justify-content-center mt-3">
-                                            <button type="submit" class="btn text-white  px-4 py-2 fw-bold btn-secondary">Save and Create Form</button>
+                                           <Link to="/userdashboardforminput1"> <button type="submit" class="btn text-white  px-4 py-2 fw-bold btn-secondary">Save and Create Form</button></Link>
                                         </div>
                                     </div>
                                 </div>
@@ -50,7 +51,7 @@ export default function UserDashboardCreateForm() {
                         </div>
                     </div>
                 </div>
-                <Site />
+                {/* <Site /> */}
             </div>
        
     </div>;

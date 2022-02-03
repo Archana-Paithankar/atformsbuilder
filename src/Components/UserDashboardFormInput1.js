@@ -3,7 +3,7 @@ import Dashboard from './Dashboard';
 import Site from './Site';
 import Header from './Header';
 import '../Css/style.css';
-
+import { Link } from 'react-router-dom';
 export default function UserDashboardFormInput1() {
     return <div>
         <div className='container-fluid'>
@@ -105,9 +105,9 @@ export default function UserDashboardFormInput1() {
                                 </div>
                             </div>
                             <div className='row'>
-                                <div className='col'>
-                                    <div class="col-auto d-flex justify-content-end mx-5">
-                                        <button type="submit" class="btn text-white fw-bold bg-secondary">Add More Fields</button>
+                                <div className='col d-flex justify-content-end'>
+                                    <div className="col-4 mx-5">
+                                       <Link to="/userdashboardforminput2"> <button type="submit" className="btn text-white fw-bold bg-secondary">Add More Fields</button></Link>
                                     </div>
                                 </div>
                             </div>
@@ -117,9 +117,9 @@ export default function UserDashboardFormInput1() {
                                 </div>
                             </div>
                             <div className='row'>
-                                <div className='col'>
-                                    <div class="col-auto d-flex justify-content-center">
-                                        <button type="submit" class="btn text-white fw-bold btn-secondary">Save and Continue</button>
+                                <div className='col d-flex justify-content-center'>
+                                    <div className="col-5 d-flex justify-content-center">
+                                     <Link to="/userdashboardformpreview">   <button type="submit" className="btn text-white px-4 py-4 fw-bold btn-secondary">Save and Continue</button></Link>
                                     </div>
                                 </div>
                             </div>
@@ -127,7 +127,7 @@ export default function UserDashboardFormInput1() {
                     </div>
                 </div>
             </div>
-            <Site />
+            {/* <Site /> */}
         </div>
     </div>;
 }

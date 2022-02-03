@@ -5,10 +5,12 @@
 .container{
     background-color: #B3BAB1;
     height:100%;
+    width: 100%;
 }
 .container-fluid{
     background-color: #B3BAB1;
     height:100%;
+    width: 100%;
 }
 /* Header.js css */
 .at-username ,.at-logout-btn a{
@@ -44,7 +46,7 @@ border-bottom-right-radius: 10px;
     height: 95%;
 }
 .formInput{
-    width: 80%;
+    width: 83%;
 }
 /* FirstLoginFormScreen CSS */
 .at-welcome{
@@ -88,6 +90,7 @@ hr {
   }
   .btn{
       width: 100%;
+      font-size: 20px;
   }
   /* Footer CSS */
   .page-footer h4{

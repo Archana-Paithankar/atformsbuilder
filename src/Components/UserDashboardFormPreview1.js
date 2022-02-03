@@ -2,6 +2,7 @@ import React from 'react';
 import Site from './Site';
 import Dashboard from './Dashboard';
 import Header from './Header';
+import { Link } from 'react-router-dom';
 import '../Css/style.css'
 export default function UserDashboardFormPreview1() {
     return <div>
@@ -46,18 +47,18 @@ export default function UserDashboardFormPreview1() {
                                     <hr className='text-white'/>
                                 </div>
                             </div>
-                            <div className='row d-flex justify-content-center'>                           
-                                    <div class="col-auto mt-3 mb-5">
-                                        <button type="submit" class="btn text-white  px-4 py-2 fw-bold btn-secondary">Save Link</button>
+                            <div className='row'>                           
+                                    <div className="col-5 d-flex justify-content-center  ms-5">
+                                    <Link to="/userdashboardsavedforms">  <button type="submit" className="btn text-white px-4 py-4 fw-bold btn-secondary">Save Link</button></Link>
                                     </div>
-                                    <div class="col-auto mt-3 mb-5">
-                                        <button type="submit" class="btn text-white  px-4 py-2 fw-bold btn-secondary">Publish Now</button>
+                                    <div className="col-5 d-flex justify-content-center">
+                                        <button type="submit" className="btn text-white px-4 py-4 fw-bold btn-secondary">Publish Now</button>
                                     </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <Site />
+                {/* <Site /> */}
             </div>
         </div>
     </div>;

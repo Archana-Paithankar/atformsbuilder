@@ -7,6 +7,14 @@ import '../Css/style.css'
 export default function Site() {
   return <div>
     <div className='container-fluid'>
+      <div className='row'>
+        {/* <div className='col-3'>
+        <Dashboard />
+        </div> */}
+     
+     <div className='col-9'> <Outlet /></div>
+     
+      </div>
     <footer className="page-footer">
         <div className='row'>
           <div className='col-12 mb-0'>

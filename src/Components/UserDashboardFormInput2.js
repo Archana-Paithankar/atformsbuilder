@@ -2,6 +2,7 @@ import React from 'react';
 import Site from './Site';
 import Dashboard from './Dashboard';
 import Header from './Header';
+import { Link } from 'react-router-dom';
 export default function UserDashboardFormInput2() {
   return <div>
     <div className='container-fluid'>
@@ -185,31 +186,27 @@ export default function UserDashboardFormInput2() {
                             </div>
 
                             <div className='row'>
-                            <div className='col'>
-                                <div class="col-auto d-flex justify-content-end mx-5">
-                                    <button type="submit" class="btn text-white fw-bold bg-secondary">Add More Fields</button>
+                                <div className='col-12 d-flex justify-content-end'>
+                                <div className="col-4 me-5">
+                                    <button type="submit" className="btn text-white fw-bold bg-secondary">Add More Fields</button>
                                 </div>
-                            </div>
+                                </div>
                         </div>
                         <div className='row'>
                             <div className='col px-5'>
                                 <hr />
                             </div>
                         </div>
-                        <div className='row'>
-                            <div className='col'>
-                                <div class="col-auto d-flex justify-content-center">
-                                    <button type="submit" class="btn text-white fw-bold btn-secondary">Save and Continue</button>
+                        <div className='row d-flex justify-content-center'>                          
+                                <div className="col-5">
+                                <Link to="/userdashboardformpreview">   <button type="submit" className="btn text-white px-4 py-4 fw-bold btn-secondary">Save and Continue</button></Link>
                                 </div>
-                            </div>
                         </div>
                         </div>
-                    </div>
-
-                    
+                    </div>   
                 </div>
             </div>
-            <Site />
+            {/* <Site /> */}
         </div>
   </div>;
 }
