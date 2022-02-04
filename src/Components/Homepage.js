@@ -39,7 +39,7 @@ export default function Homepage() {
             </div>
           </div>
 
-          <div className='col-7'>
+          <div className='col-6'>
             <div className='at-form-info-Container'>
               <div className='row'>
                 <div className='col  d-flex justify-content-center'>
@@ -50,7 +50,7 @@ export default function Homepage() {
                 <div className='row'>
                   <div className='col'>
                     <div class="mb-3 mt-5">
-                      <label for="exampleFormControlInput1" className="form-label text-white ms-5 text-muted"><h5>Enter Your Name</h5></label>
+                      <label for="exampleFormControlInput1" className="form-label text-white ms-5"><h5>Enter Your Name</h5></label>
                       <input type="text" className="form-control formInput ms-5" id="exampleFormControlInput1" />
                     </div>
                   </div>
@@ -58,17 +58,15 @@ export default function Homepage() {
                 <div className='row'>
                   <div className='col'>
                     <div class="mb-3">
-                      <label for="exampleFormControlTextarea1" className="form-label text-white ms-5 text-muted"><h5>Enter Your Email ID</h5></label>
+                      <label for="exampleFormControlTextarea1" className="form-label text-white ms-5"><h5>Enter Your Email ID</h5></label>
                       <input type="email" className="form-control formInput ms-5" id="exampleFormControlInput1" />
                     </div>
                   </div>
                 </div>
-                <div className='row'>
-                  <div className='col'>
-                    <div class="col-auto d-flex justify-content-center mt-3">
-                   <Link to="/firsttimeloginscreen"><button type="submit" class="btn text-white  px-4 py-2 fw-bold btn-secondary">Sign in or Sign Up</button></Link>
+                <div className='row d-flex justify-content-center'>
+                    <div class="col-auto mt-3">
+                   <Link to="/firsttimeloginscreen"><button type="submit" class="btn text-white fw-bold btn-secondary" id="at-form-button">Sign in or Sign Up</button></Link>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>

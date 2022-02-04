@@ -55,7 +55,6 @@ export default function UserDashboardSavedForms() {
                             <div className='col-2'><button id='at-delete-btn'>Delete Form</button></div>
                             <hr />
                         </div>
-
                         <div className='row py-3 mx-3'>
                             <div className='col-6'>
                                 <p className='text-white'>4.Job Application for Java Developer</p>
@@ -63,7 +62,6 @@ export default function UserDashboardSavedForms() {
                             <div className='col-2'><button id='at-view-btn'>View Data</button></div>
                             <div className='col-2'><button id='at-export-btn'>Export Data</button></div>
                             <div className='col-2'><button id='at-delete-btn'>Delete Form</button></div>
-
                         </div>
                     </div>
                 </div>

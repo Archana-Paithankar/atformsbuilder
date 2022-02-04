@@ -12,7 +12,7 @@ export default function Site() {
         <Dashboard />
         </div> */}
      
-     <div className='col-9'> <Outlet /></div>
+     <div className='col-12'> <Outlet /></div>
      
       </div>
     <footer className="page-footer">
