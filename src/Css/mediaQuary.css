@@ -1,0 +1,130 @@
+@media only screen and (max-width: 480px) {
+    .hightlights {
+        display: none;
+    }
+
+    .at-main-login-container h2 {
+        font-size: 16px;
+    }
+
+    .at-main-login-container {
+        margin-left: 0px;
+    }
+
+    .at-login-button {
+        font-size: 16px;
+    }
+
+    .at-save-button {
+        font-size: 14px;
+    }
+
+    .at-add-more-field-btn {
+        font-size: 10px;
+        background-color: #b3b3b3;
+    }
+
+    .at-optional-btn {
+        font-size: 10px;
+        background-color: #434343;
+        border-radius: 60px;
+        padding: 0px 4px 0px 4px;
+        border: 1px solid white;
+    }
+
+    .at-feature-text {
+        font-size: 16px;
+    }
+
+    .nav, .nav-item, .nav-link {
+        display: none;
+    }
+
+    .at-welcome-heading h3 {
+        font-size: 14px;
+
+    }
+
+    .at-login-instruction p {
+        font-size: 12px;
+        color: red;
+        word-spacing: 8px;
+    }
+
+    .at-login-instruction-2 p {
+        font-size: 14px;
+        word-spacing: 8px;
+     
+    }
+   
+    .at-login-instruction-2 a {
+        font-size: 14px;
+    }
+
+    .at-footer-p {
+        font-size: 8px;
+    }
+
+    /* saved form */
+    .at-back-btn {
+        font-size: 8px;
+    }
+
+    .at-saved-form-btn {
+        font-size: 8px;
+        margin-left: 20px;
+        text-decoration: none;
+        color: white;
+        padding-bottom: 4px;
+    }
+
+    .at-saved-form-p {
+        font-size: 8px;
+        padding-top: 10px;
+        margin-left: 10px;
+    }
+
+    .at-saved-hr-line {
+        border-top: 3px solid #434343;
+        width: 90%;
+        margin-left: 10px;
+    }
+
+    /* Header */
+    .at-logout-btn {
+        font-size: 10px;
+        text-decoration: none;
+        color: red;
+    }
+    .at-welcome {
+        /* display: none; */
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .at-logo{
+       width: 60px;
+    }
+    
+.at-radio-input {
+    font-size: 8px;
+}
+
+
+}
+
+
+/* @nd media query */
+@media only screen and (max-width: 768px) {
+    .nav, .nav-item, .nav-link {
+        font-size: 10px;
+    }
+        
+.at-radio-input {
+    font-size: 10px;
+}
+.at-back-btn {
+    font-size: 8px;
+}
+
+
+}

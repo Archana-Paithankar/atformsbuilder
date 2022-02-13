@@ -1,105 +1,195 @@
-.logoimg {
-    width: 200px;
-    height: 50px;
-}
-.container{
-    background-color: #B3BAB1;
-    height:100%;
-    width: 100%;
-}
-.container-fluid{
-    background-color: #B3BAB1;
-    height:100%;
-    width: 100%;
-}
-/* Header.js css */
-.at-username ,.at-logout-btn a{
-    text-decoration: none;
-     font-size: 1.3rem;
-  }
-.at-username a{
-    color: black;  
-}
-.at-logout-btn a{
-    color: red;
-}
-/* Homepage CSS */
-.at-form-p-elements p{
-    background-color: rgb(190, 189, 189);
-    padding: 5px;
-    font-size:1.5rem;
-    height: 20%;
-}
-.at-form-p-elements p:hover{
-background: linear-gradient(to right,#414641,#B3BAB1);
-}
-.at-collect-Information{
-background-color: #232523 ;
-height: 95%;
-border-bottom-left-radius: 10px;
-border-bottom-right-radius: 10px;
-}
-.at-form-info-Container{
-    background-color: #414641;
-    border-radius: 10px;
-    padding:35px 0px 35px 0px;
-    height: 95%;
-}
-.formInput{
-    width: 83%;
-}
-/* FirstLoginFormScreen CSS */
-.at-welcome{
-    font-size: 2rem;
-    font-weight: normal;
-    word-spacing: 3px;
-    letter-spacing: 1px;
-}
-.at-login-warning p{
-font-size: 1.5rem;
-color: red;
-text-align: justify;
-text-justify: inter-word;
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight:500;
+    background-color: #b3b3b3;
 }
 
-/* UserDashboardFirstTime CSS */
-.at-login p{
-    font-size: 1.5rem;
+.hightlights {
+    display: block;
+    font-size: 16px;
 }
-.at-login a{
-    font-size: 1.5rem;
+
+.hightlights p:hover {
+    background: linear-gradient(to right, #4d4848, #887f7f, rgb(184, 171, 171));
+}
+
+.at-main-login-container {
+    background-color: #434343;
+    border-radius: 10PX;
+    padding-top: 30px;
+}
+
+.at-main-login-container h2 {
+    font-size: 16px;
+}
+
+.at-login-button {
+    font-size: 16px;
+    background-color: #434343;
+}
+
+.at-save-button {
+    font-size: 20px;
+}
+
+.at-login-container {
+    background-color: #212121;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+    padding: 5px 15px 5px 15px;
+    margin-top: 30px;
+}
+
+.at-main-login-container {
+    margin-left: 40px;
+}
+
+.at-radio-input {
+    font-size: 14px;
+}
+
+.at-optional-btn {
+    font-size: 16px;
+    background-color: #434343;
+    border-radius: 60px;
+    padding: 0px 8px 0px 8px;
+    border: 1px solid white;
+}
+
+.at-add-more-field-btn {
+    font-size: 16px;
+    background-color: #b3b3b3;
+}
+
+.at-feature-text {
+    font-size: 34px;
+}
+
+.at-login-instruction p {
+    font-size: 20px;
+    font-weight: 100;
+    color: red;
+    word-spacing: 8px;
+}
+
+.at-login-instruction-2 p {
+    font-size: 20px;
+    font-weight: 200;
+    word-spacing: 8px;
+}
+
+.at-login-instruction-2 a {
+    font-size: 20px;
+    font-weight: 200;
     color: blue;
 }
 
-/* UserDashboardSavedForms.js css */
-.at-saved-paragraphs{
-    color: white; 
-}
- #at-view-btn, #at-export-btn, #at-delete-btn{
-  border-radius: 50px;
-  background-color: #232523;
-  outline: none;
-  border: none;
-  color: white;
+.at-welcome-heading h3 {
+    font-size: 24px;
+    display: block;
 }
 
-/* UserDashboardFormPreview.js  Css*/
+.at-hr-line {
+    border-bottom: 5px solid #212121;
+}
 
-hr {    
-    border-top: 4px solid white;
-  }
-  .btn{
-      width: 100%;
-      font-size: 20px;
-  }
-  /* Footer CSS */
-  .page-footer h4{
-      font-size: 1.5rem;
-  }
-  
+.at-footer-hr-line {
+    border-bottom: 5px solid #212121;
+}
 
-  #at-form-button{
-    width:230px;
-     background-color: #414641;
-     outline: #414641;
-  }
+.at-footer-p {
+    font-size: 16px;
+}
+
+/* preview 1 */
+.at-back-btn {
+    font-size: 16px;
+    color:white;
+}
+
+/* saved form */
+
+.at-saved-form-btn {
+    font-size: 13px;
+    padding-top: 10px;
+    margin-left: 5px;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 4px;
+}
+
+.at-saved-form-p {
+    font-size: 13px;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    margin-left: 30px;
+}
+
+.at-last-saved-form-element {
+    padding-bottom: 70px;
+}
+
+.at-saved-hr-line {
+    border-bottom:3px solid #b3b3b3;
+ width: 95%;
+ margin-left: 20px;
+}
+
+/* Navbar */
+
+.nav, .nav-item, .nav-link {
+    font-size: 16px;
+    display: block;
+    color: black;
+}
+
+.nav-link {
+    background: linear-gradient(180deg, #c1c1c7, #b0abb8)
+}
+
+.nav-link:hover {
+    color: black;
+    background: linear-gradient(to right, rgb(71, 70, 70), #746d6d, rgb(189, 183, 183));
+}
+/* 
+.at-sidebar-2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100%;
+    background-color: #b0abb8;
+    color: black;
+} */
+/* Header html */
+.at-welcome {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.at-logout-btn {
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+    color: red;
+}
+.at-logo{
+    width: 160px;
+ }
+ /* Dashborad */
+.at-links{
+     text-decoration: none;
+ }
+ .at-links:hover{
+    text-decoration: none;
+    color: white;
+}
+ /* footer */
+ /* .at-content{
+   height: 100vh;
+
+ } */

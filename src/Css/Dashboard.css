@@ -1,9 +1,0 @@
- li a{
-    background: #B3BAB1;
-    margin-left: 2.5rem;
-    word-spacing: .1rem;
-    font-size: 25px;
-}
-li a:hover{
-   background:  linear-gradient(to right,#414641,#B3BAB1);
-}

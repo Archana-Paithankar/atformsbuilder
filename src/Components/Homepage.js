@@ -1,79 +1,32 @@
 import React from 'react';
-import Site from './Site';
-import { Link } from 'react-router-dom';
 import '../Css/style.css'
-import FirstTimeLoginScreen from './FirstTimeLoginScreen';
+import Dashboard from './Dashboard';
+import { Link } from 'react-router-dom';
+import Header from './Header';
+import '../Css/mediaQuary.css';
 export default function Homepage() {
-  return <div>
-    <div className="container-fluid">
-      <div className='container p-5'>
-        <div className='row'>
-          <div className='col d-flex justify-content-center pb-4'>
-            <img src='./image/logo.png' alt='logo' className='logoimg' />
-          </div>
+    return <div>
+        <div className="container">
+        <div className="row">
+           <Header />
         </div>
-        <div className='row'>
-          <div className='col d-flex justify-content-center'>
-            <h5 className='my-4 mb-5 h2'>MAKE YOUR FORMS FOR FREE</h5>
-          </div>
+        <div className="row">
+            <div className="col-sm col-md col-lg col-xl col-xxl py-3 at-welcome-heading">
+                <h3 className="text-uppercase text-center">welcome to atforms form builder</h3>
+            </div>
         </div>
-        <div className='row'>
-          <div className='col-6 at-form-p-elements'>
-            <div className='mb-2'>
-              <p>Simple way to add multiple fields</p>
+        <div className="row">
+            <div className="col-sm col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+               <Dashboard />
             </div>
-            <div className='mb-2'>
-              <p>Create forms to collect information for your school,college,business and so on.</p>
+            <div className="col-sm col-md-9 col-lg-9 col-xl-9 col-xxl-9 ps-4 pt-2 at-login-instruction">
+                <p className="mb-4">Please check you E-mail for E-mail Verification Link and click
+                    to verify email and access your form builder dashboard.</p>
+                <p>If you haven’t receive verification email please click to<br />
+                  <Link to="/welcome"><a href="#"> Re-send E-mail</a></Link>
+                </p>
             </div>
-            <div className='mb-2'>
-              <p>Get custome short links for free and and share to collect information.</p>
-            </div>
-            <div className='mb-2'>
-              <p>View collected information in tables</p>
-            </div>
-            <div className='mb-2'>
-              <p>Export your collected data in excel format.</p>
-            </div>
-            <div className='mb-2'>
-              <p>Create unlimited forms with one account.</p>
-            </div>
-          </div>
-
-          <div className='col-6'>
-            <div className='at-form-info-Container'>
-              <div className='row'>
-                <div className='col  d-flex justify-content-center'>
-                  <h3 className='text-white p-4'> START COLLECTING INFORMATION</h3>
-                </div>
-              </div>
-              <div className='at-collect-Information'>
-                <div className='row'>
-                  <div className='col'>
-                    <div class="mb-3 mt-5">
-                      <label for="exampleFormControlInput1" className="form-label text-white ms-5"><h5>Enter Your Name</h5></label>
-                      <input type="text" className="form-control formInput ms-5" id="exampleFormControlInput1" />
-                    </div>
-                  </div>
-                </div>
-                <div className='row'>
-                  <div className='col'>
-                    <div class="mb-3">
-                      <label for="exampleFormControlTextarea1" className="form-label text-white ms-5"><h5>Enter Your Email ID</h5></label>
-                      <input type="email" className="form-control formInput ms-5" id="exampleFormControlInput1" />
-                    </div>
-                  </div>
-                </div>
-                <div className='row d-flex justify-content-center'>
-                    <div class="col-auto mt-3">
-                   <Link to="/firsttimeloginscreen"><button type="submit" class="btn text-white fw-bold btn-secondary" id="at-form-button">Sign in or Sign Up</button></Link>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      {/* <Site /> */}
     </div>
-  </div>
+    </div>;
 }
